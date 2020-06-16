@@ -1,0 +1,6 @@
+.idea/
+backend-social-network.iml
+target/
+.classpath
+.project
+.settings/
