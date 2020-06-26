@@ -12,9 +12,9 @@ public class Comments {
 	 */
 	public static int one() {
 		int i;
-		i = 1;
+		//i = 1;
 		i = 2;
-		i = 3;
+		//i = 3;
 		return i;
 	}
 	
@@ -24,15 +24,15 @@ public class Comments {
 	 */
 	public static int two() {
 		int i;
-		i = 1;
+		/*i = 1;
 		i = 2;
 		i = 3;
-		i = 4;
+		i = 4;*/
 		i = 5;
-		i = 6;
+		/*i = 6;
 		i = 7;
 		i = 8;
-		i = 9;
+		i = 9;*/
 		return i;
 	}
 
@@ -43,7 +43,7 @@ public class Comments {
 	 */
 	public static int three() {
 		int i;
-		i = 1; i = 2; i = 3;
+		/*i = 1;*/ i = 2;/* i = 3;*/
 		return i;
 	}
 

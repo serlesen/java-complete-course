@@ -11,6 +11,7 @@ public class Variables {
 	 */
 	public static int one() {
 		int a = 0;
+		a = 3;
 		return a;
 	}
 	
@@ -19,7 +20,8 @@ public class Variables {
 	 * Return the created variable.
 	 */
 	public static int two() {
-		return 0;
+		int x = 2;
+		return x;
 	}
 
 	/**
@@ -29,10 +31,10 @@ public class Variables {
 	public static int three() {
 		
 		// create a new variable ⬇ with the initial value of 5
-		
+		int x = 5;
 		// create a new variable ⬆ with the initial value of 5
 		
-		int a = 0; // assign the new variable to 'a' instead of 0
+		int a = x; // assign the new variable to 'a' instead of 0
 		
 		return a;
 	}

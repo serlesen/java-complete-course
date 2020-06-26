@@ -11,7 +11,7 @@ public class PkgTest {
 	 */
 	@Test
 	public void testPkg() {
-		assertEquals(30, com.sergio.javacourse.pkg.Pkg.one());
+		assertEquals(30, com.sergio.javacourse.pkg.three.Pkg.one());
 	}
 	
 	/**
@@ -27,7 +27,7 @@ public class PkgTest {
 	 */
 	@Test
 	public void testThree() {
-		assertEquals(10, com.sergio.javacourse.pkg.two.Pkg.one());
+		assertEquals(10, com.sergio.javacourse.pkg.Pkg.one());
 	}
 	
 	/**
@@ -35,6 +35,6 @@ public class PkgTest {
 	 */
 	@Test
 	public void testFour() {
-		assertEquals(20, com.sergio.javacourse.pkg.three.Pkg.one());
+		assertEquals(20, com.sergio.javacourse.pkg.two.Pkg.one());
 	}
 }
