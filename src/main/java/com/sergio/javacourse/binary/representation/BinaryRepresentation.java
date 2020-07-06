@@ -10,20 +10,20 @@ public class BinaryRepresentation {
 	 * Return the binary representation of 3.
 	 */
 	public static String one() {
-		return "0000";
+		return "0011";
 	}
 	
 	/**
 	 * Return the binary representation of 8.
 	 */
 	public static String two() {
-		return "0000";
+		return "1000";
 	}
 	
 	/**
 	 * Return the binary representation of 13.
 	 */
 	public static String three() {
-		return "0000";
+		return "1101";
 	}
 }

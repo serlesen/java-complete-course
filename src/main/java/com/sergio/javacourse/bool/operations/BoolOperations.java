@@ -12,7 +12,7 @@ public class BoolOperations {
 	public static boolean one() {
 		boolean a = false;
 		boolean b = true;
-		return true;
+		return a && b;
 	}
 	
 	/**
@@ -21,7 +21,7 @@ public class BoolOperations {
 	public static boolean two() {
 		int a = 3;
 		int b = 5;
-		return false;
+		return a < b;
 	}
 	
 	/**
@@ -29,7 +29,7 @@ public class BoolOperations {
 	 */
 	public static boolean three() {
 		boolean a = false;
-		return false;
+		return !a;
 	}
 
 }

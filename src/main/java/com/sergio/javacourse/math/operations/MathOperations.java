@@ -13,7 +13,7 @@ public class MathOperations {
 	public static int one() {
 		int a = 15;
 		int b = 5;
-		return 0;
+		return a + b;
 	}
 	
 	/**
@@ -23,7 +23,7 @@ public class MathOperations {
 	public static int two() {
 		int a = 15;
 		int b = 5;
-		return 0;
+		return a - b;
 	}
 	
 	/**
@@ -33,7 +33,7 @@ public class MathOperations {
 	public static int three() {
 		int a = 16;
 		int b = 5;
-		return 0;
+		return a % b;
 	}
 
 }

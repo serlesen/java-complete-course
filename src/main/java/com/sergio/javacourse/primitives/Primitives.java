@@ -11,7 +11,8 @@ public class Primitives {
 	 * Return the variable
 	 */
 	public static boolean one() {
-		return false;
+		boolean b = true;
+		return b;
 	}
 	
 	/**
@@ -19,7 +20,8 @@ public class Primitives {
 	 * Return the variable
 	 */
 	public static int two() {
-		return 0;
+		int i = 100;
+		return i;
 	}
 	
 	/**
@@ -27,7 +29,8 @@ public class Primitives {
 	 * Return the variable
 	 */
 	public static float three() {
-		return 0;
+		float f = 5.5f;
+		return f;
 	}
 
 }
