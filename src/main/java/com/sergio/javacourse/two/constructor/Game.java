@@ -7,5 +7,12 @@ package com.sergio.javacourse.two.constructor;
  *
  */
 public class Game {
+	
+	private String name;
+	private float price;
 
+	public Game(String name, float price) {
+		this.name = name;
+		this.price = price;
+	}
 }

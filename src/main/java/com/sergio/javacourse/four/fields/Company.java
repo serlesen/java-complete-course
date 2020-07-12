@@ -7,5 +7,14 @@ package com.sergio.javacourse.four.fields;
  *
  */
 public class Company {
+	
+	private int businessValue;
 
+	public Company(int businessValue) {
+		this.businessValue = businessValue;
+	}
+	
+	public void buy(int price) {
+		this.businessValue -= price;
+	}
 }

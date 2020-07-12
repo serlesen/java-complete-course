@@ -8,5 +8,17 @@ package com.sergio.javacourse.three.methods;
  *
  */
 public class Computer {
+	
+	public void turnOn() {
+		System.out.println("turning on...");
+	}
+	
+	public void turnOff() {
+		System.out.println("turning off...");
+	}
+	
+	public void openApp(String appName) {
+		System.out.println("opening " + appName);
+	}
 
 }
