@@ -29,7 +29,7 @@ To see the content, run from a terminal:
 git checkout chapter_1
 ```
 
-You will have exercices/tests to test your knowledge by running `mvn test`
+You will have exercises/tests to test your knowledge by running `mvn test`
 from the root folder of the project. If you want to see the answers, run
 from a terminal:
 ```
@@ -97,14 +97,14 @@ To see the content, run from a terminal:
 git checkout chapter_2
 ```
 
-You will have exercices/tests to test your knowledge by running `mvn test`
+You will have exercises/tests to test your knowledge by running `mvn test`
 from the root folder of the project. If you want to see the answers, run
 from a terminal:
 ```
 git checkout chapter_2_solutions
 ```
 
-------------------------------- link ----------------------------
+https://www.youtube.com/watch?v=DVWjxuV0GPk&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=6&t=0s
 
 ### Primitives
 Here I will list all the primitives and describe their limits. How many characters
@@ -140,5 +140,141 @@ you must use 8 + 2 or 2^3 + 2^1 which is 1010.
 As the numbers are just a decimal representation of a binary number, you can perform
 bitwise operations in numbers, bitwise operations on each bit of a number, like: AND,
 OR, XOR and shift to the left or to the right.
+
+
+## Chapter 3
+
+In the third chapter, we enter into the world of the object oriented programming. Here
+will be presented the objects: how to create an object/class, how to use it, how to
+add fields and methods.
+
+I will try to explain the concept of an object with the similarity with a car. The
+definition of a car is the same for all the brands, but each car has a different behavior.
+It's the same with the objects: you have a single definition, but once instanciated,
+the behavior may differ a lot.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_3
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_3_solutions
+```
+
+---------------------------------------- link ------------------------------------------
+
+### Class
+
+An object is created with a Java Class. What will be inside this class will be the definition
+of the behavior of the current object, of the current class. To instantiate a class we
+need a constructor. Each class have a default empty constructor. But another one can be
+created, with input parameters and some initial statements. The constructor is the method
+which will be called when creating the object, when creating an instance. This method
+will set up the initial state of the object (setting some inner fields).
+
+### Methods
+
+The methods are the communication of the object with the rest of the application. The public
+methods can be called from the outside of the class, and the private methods can only be
+used inside the current class. The methods owned by the object are not static (that's the
+difference with the `public static void main` method). This means that to call the method
+you must first instantiate the object and call the method from the instance variable (and
+not from the class name).
+
+### Fields
+
+The fields are variables which are set at the class scope. They are declared inside the class
+and not inside a method. Those fields will determine the behavior of the class. Those fields 
+may have a different value for each instantiation of the same class.
+
+
+## Chapter 4
+
+In this fourth chapter, we will see the loops. The loops are very important to manage the
+execution flow of an application. You can iterate until a condition is satisfied (or no
+more satisfied), you can iterate over a range of number (from 1 to 10), or you can
+iterate over a list of elements.
+
+In this chapter, we will take a look at the while-loops, do-while-loops, for-loops and 
+for-each-loops.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_4
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_4_solutions
+```
+
+-------------------------------------- link ------------------------------------
+
+### While loops
+
+The while loops are the oldest one. The will iterate over a set of instructions
+while a condition is true.
+
+```
+while(condition) {
+	// set of statements
+}
+```
+
+### Do-While loops
+
+The do-while loops is an evolution of the while loops, where you can first iterate
+over the instructions and then check the exit condition. When changes is the order
+of the first iteration: with the while-loop we first check the condition and then run
+the statements, with the do-while-loop we first run the statements and then check
+the condition.
+
+```
+do {
+	// set of statements
+} while(condition);
+```
+
+### For loops
+
+The for-loops are easiest to use, because the exit condition and the iterative condition
+are defined together in the loop definition. There is less probability to fall into
+an infinite loop in comparison with the while-loops.
+
+To define a for-loop, we have three statements:
+* the initialization
+* the exit condition
+* the iterative statement: which is use to modify the exit condition until the exit of the loop
+
+```
+for (initialization; exit_condition; iterative_statement) {
+	// set of statements
+}
+``` 
+
+### For-each loops
+
+The for-each loops are a variant of the for loops used with lists or sets. With the for-each
+loop, we don't need to care about the initialization, exit condition and iterative statement.
+The for-each loop will automatically iterate over each element of the give list.
+
+```
+for (var item : list_of_items) {
+	// set of statements
+}
+```
+
+### Special keywords
+
+To control the loops, we have some special keywords:
+* break: which will break the loop, exit the loop, and continue the execution below the loop
+* continue: which will jump to the next iteration
+* return: as break, it will break the loop, but also the current method
 
 
