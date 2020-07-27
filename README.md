@@ -192,9 +192,9 @@ and not inside a method. Those fields will determine the behavior of the class. 
 may have a different value for each instantiation of the same class.
 
 
-## Chapter 4
+## Chapter 7
 
-In this fourth chapter, we will see the loops. The loops are very important to manage the
+In this seventh chapter, we will see the loops. The loops are very important to manage the
 execution flow of an application. You can iterate until a condition is satisfied (or no
 more satisfied), you can iterate over a range of number (from 1 to 10), or you can
 iterate over a list of elements.
