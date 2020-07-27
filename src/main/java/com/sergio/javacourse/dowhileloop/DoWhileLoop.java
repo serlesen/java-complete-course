@@ -1,5 +1,6 @@
 package com.sergio.javacourse.dowhileloop;
 
+import java.util.Calendar;
 import java.util.List;
 
 import com.sergio.javacourse.misc.User;
@@ -16,6 +17,12 @@ public class DoWhileLoop {
 	 */
 	public static void one() {
 		var users = User.buildUserList();
+		
+		int i = 0;
+		do {
+			System.out.println(users.get(i).name);
+			i++;
+		} while (i < users.size());
 	}
 	
 	/**
@@ -24,6 +31,14 @@ public class DoWhileLoop {
 	 */
 	public static List<User> two() {
 		var users = User.buildUserList();
+		
+		var year = Calendar.getInstance().get(Calendar.YEAR);
+		
+		int i = 0;
+		do {
+			users.get(i).age = year - users.get(i).birthYear;
+			i++;
+		} while (i < users.size());
 		
 		return users;
 	}
@@ -35,6 +50,18 @@ public class DoWhileLoop {
 	 */
 	public static User three() {
 		var users = User.buildUserList();
-		return null;
+		
+		User result = null;
+		
+		int i = 0;
+		do {
+			if ("Bob".equals(users.get(i).name)) {
+				result = users.get(i);
+				break;
+			}
+			i++;
+		} while (i < users.size());
+		
+		return result;
 	}
 }

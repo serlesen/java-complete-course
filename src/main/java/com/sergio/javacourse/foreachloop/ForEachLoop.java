@@ -1,5 +1,6 @@
 package com.sergio.javacourse.foreachloop;
 
+import java.util.Calendar;
 import java.util.List;
 
 import com.sergio.javacourse.misc.User;
@@ -16,6 +17,10 @@ public class ForEachLoop {
 	 */
 	public static void one() {
 		var users = User.buildUserList();
+		
+		for (var user : users) {
+			System.out.println(user.name);
+		}
 	}
 	
 	/**
@@ -24,6 +29,12 @@ public class ForEachLoop {
 	 */
 	public static List<User> two() {
 		var users = User.buildUserList();
+		
+		var year = Calendar.getInstance().get(Calendar.YEAR);
+		
+		for (var user : users) {
+			user.age = year - user.birthYear;
+		}
 		
 		return users;
 	}
@@ -35,6 +46,15 @@ public class ForEachLoop {
 	 */
 	public static User three() {
 		var users = User.buildUserList();
-		return null;
+		
+		User result = null;
+		
+		for (var user : users) {
+			if ("Bob".equals(user.name)) {
+				result = user;
+				break;
+			}
+		}
+		return result;
 	}
 }
