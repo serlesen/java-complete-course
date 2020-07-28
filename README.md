@@ -209,7 +209,7 @@ from a terminal
 git checkout chapter_4_solutions
 ```
 
------------------------------------------- link -----------------------------------
+https://www.youtube.com/watch?v=9zq6xJRHRAg&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=8&t=0s
 
 ### Object references
 
