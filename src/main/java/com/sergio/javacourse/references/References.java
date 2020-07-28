@@ -13,7 +13,7 @@ public class References {
 	 * Ensure to have the white space between both
 	 */
 	public static String one() {
-		return "one";
+		return "one" + " two";
 	}
 	
 	/**
@@ -25,7 +25,7 @@ public class References {
 		String second = new String("Joe");
 		
 		
-		return false;
+		return first.equals(second);
 	}
 	
 	/**
@@ -36,7 +36,7 @@ public class References {
 		User first = new User("Joe", 15, 1000);
 		User second = new User("Joe", 15, 1000);
 		
-		return false;
+		return first.equals(second);
 	}
 	
 
