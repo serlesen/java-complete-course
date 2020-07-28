@@ -192,6 +192,36 @@ and not inside a method. Those fields will determine the behavior of the class. 
 may have a different value for each instantiation of the same class.
 
 
+## Chapter 4
+
+In this chapter, we will end with the objects, we will study the object references. And then,
+introduce the strings.
+
+ To see the content, run from a terminal:
+```
+git checkout chapter_4
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal
+```
+git checkout chapter_4_solutions
+
+### Object references
+
+The object references is the way an object is stored in the JVM. They
+are not stored like the primitive types. The variables, in fact, store the memory address
+to find the content of the object. To compare two objects, we have to use the `equals()` 
+method and not the `==`.
+
+### Strings
+
+The strings are way more used than the single characters. Nevertheless, they are more complex
+as they are objects. They are objects, but have a lot of primitive types behavior, like: the
+`+` symbol to concat strings, the instantiation without the parenthesis and the `new` keyword.
+
+
 ## Chapter 7
 
 In this seventh chapter, we will see the loops. The loops are very important to manage the
@@ -204,14 +234,14 @@ for-each-loops.
 
 To see the content, run from a terminal:
 ```
-git checkout chapter_4
+git checkout chapter_7
 ```
 
 You will have exercises/tests to test your knowledge by running `mvn test`
 from the root folder of the project. If you want to see the answers, run
 from a terminal:
 ```
-git checkout chapter_4_solutions
+git checkout chapter_7_solutions
 ```
 
 -------------------------------------- link ------------------------------------
