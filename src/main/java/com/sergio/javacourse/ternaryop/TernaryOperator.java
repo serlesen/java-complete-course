@@ -14,6 +14,8 @@ public class TernaryOperator {
 	public static int one(int incoming) {
 		int result = -1;
 		
+		result = incoming > 10 ? 1 : 2;
+		
 		return result;
 	}
 

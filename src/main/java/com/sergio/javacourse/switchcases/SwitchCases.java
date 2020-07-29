@@ -15,6 +15,15 @@ public class SwitchCases {
 	public static int one(int incoming) {
 		int result = -1;
 		
+		switch(incoming) {
+			case 1:
+				result = 10;
+				break;
+			case 10:
+				result = 20;
+				break;
+		}
+		
 		return result;
 	}
 	
@@ -27,6 +36,18 @@ public class SwitchCases {
 	public static int two(String incoming) {
 		int result = -1;
 		
+		switch(incoming) {
+			case "hello":
+				result = 10;
+				break;
+			case "bye":
+				result = 20;
+				break;
+			default:
+				result = 30;
+				break;
+		}
+		
 		return result;
 	}
 
@@ -38,6 +59,18 @@ public class SwitchCases {
 	 */
 	public static int three(int incoming) {
 		int result = -1;
+		
+		switch(incoming) {
+			case 1: case 2:
+				result = 10;
+				break;
+			case 3: case 4:
+				result = 20;
+				break;
+			default:
+				result = 30;
+				break;
+		}
 		
 		return result;
 	}

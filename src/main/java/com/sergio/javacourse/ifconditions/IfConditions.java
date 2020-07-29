@@ -12,7 +12,9 @@ public class IfConditions {
 	public static int one(int incoming) {
 		int result = 0;
 		
-		
+		if (incoming > 10) {
+			result = 1;
+		}
 		
 		return result;
 		
@@ -26,7 +28,11 @@ public class IfConditions {
 	public static int two(int incoming) {
 		int result = 0;
 		
-		
+		if (incoming > 10) {
+			result = 1;
+		} else {
+			result = 2;
+		}
 		
 		return result;
 	}
@@ -40,7 +46,13 @@ public class IfConditions {
 	public static int three(int incoming) {
 		int result = 0;
 		
-		
+		if (incoming > 10) {
+			result = 1;
+		} else if (incoming < 5) {
+			result = 2;
+		} else {
+			result = 3;
+		}
 		
 		return result;
 	}
