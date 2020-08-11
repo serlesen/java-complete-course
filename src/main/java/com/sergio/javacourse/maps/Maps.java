@@ -17,8 +17,9 @@ public class Maps {
 	 */
 	public static HashMap<String, User> one() {
 		
+		HashMap<String, User> map = new HashMap();
 		
-		return null;
+		return map;
 	}
 	
 	/**
@@ -29,14 +30,18 @@ public class Maps {
 	 */
 	public static HashMap<String, User> two() {
 		
+		HashMap<String, User> map = new HashMap();
+		map.put("first", new User("Mike"));
 		
-		return null;
+		return map;
 	}
 	
 	/**
 	 * Replace the value of the key "third" with a User named "Bob". 
 	 */
 	public static HashMap<String, User> three(HashMap<String, User> map) {
+		
+		map.put("third", new User("Bob"));
 		
 		return map;
 	}

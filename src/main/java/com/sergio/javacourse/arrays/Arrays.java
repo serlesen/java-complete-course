@@ -11,9 +11,9 @@ public class Arrays {
 	 * 
 	 */
 	public static int[] one() {
+		int[] values = {1, 2, 3};
 		
-		
-		return new int[]{};
+		return values;
 	}
 	
 	/**
@@ -22,7 +22,7 @@ public class Arrays {
 	public static int two() {
 		int[] array = {67, 61, 39, 37, 76, 28, 12};
 		
-		return 0;
+		return array[3];
 	}
 	
 	/**
@@ -30,6 +30,7 @@ public class Arrays {
 	 */
 	public static int[] three() {
 		int[] array = {23, 45, 73, 98, 27};
+		array[2] = 3;
 		return array;
 	}
 

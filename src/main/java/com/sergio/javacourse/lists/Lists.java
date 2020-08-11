@@ -12,8 +12,12 @@ public class Lists {
 	 * Create a list with three Integers and return it. 
 	 */
 	public static ArrayList<Integer> one() {
+		var list = new ArrayList<Integer>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
 		
-		return null;
+		return list;
 	}
 	
 	/**
@@ -26,6 +30,9 @@ public class Lists {
 		list.add(20);
 		list.add(15);
 		
+		list.add(100);
+		list.remove(1);
+		
 		return list;
 	}
 	
@@ -34,7 +41,7 @@ public class Lists {
 	 * 
 	 */
 	public static int three(ArrayList<Integer> list) {
-		return 0;
+		return list.indexOf(5);
 	}
 
 }
