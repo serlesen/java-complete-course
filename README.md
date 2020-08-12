@@ -209,7 +209,7 @@ from a terminal
 git checkout chapter_4_solutions
 ```
 
------------------------------------------- link -----------------------------------
+https://www.youtube.com/watch?v=9zq6xJRHRAg&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=8&t=0s
 
 ### Object references
 
@@ -223,6 +223,118 @@ method and not the `==`.
 The strings are way more used than the single characters. Nevertheless, they are more complex
 as they are objects. They are objects, but have a lot of primitive types behavior, like: the
 `+` symbol to concat strings, the instantiation without the parenthesis and the `new` keyword.
+
+
+## Chapter 5
+
+This is the fifth chapter of the Java course, but the first one where we talk about the flow
+control. From here, you will be able to manage how an application will run. In this chapter
+we will see the if-conditions and the switch-cases.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_5
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_5_solutions
+```
+
+---------------------------- link -------------------------------------
+
+### If-conditions
+
+The if-conditions allows you to split the run of an applications in two or more paths depending
+on a logical condition. You can have an if-condition, an if-else-condition or an if-else-if-condition.
+
+Here is how an if-else-if condition is implemented:
+```
+if (first-logical-condition) {
+   // first block if the first logical condition is verified
+} else if (second-logical-condition) {
+   // second block if the second logical condition is verified
+} else {
+   // third block if none of the previous logical conditions are verified
+}
+```
+
+### Switch-cases
+
+If you have to chain multiple if-conditions, the best alternative is the switch-cases. The switch-case
+is like an if-condition, where a single condition (integer or string) is evaluated and redirects to
+a block of code.
+
+```
+switch (input) {
+   case "first-value":
+      // first block if the input is equal to "first-value"
+      break;
+   case "second-value":
+      // second block if the input is equal to "second-value"
+      break;
+   defaut:
+      // third block if the input doesn't match any of the cases
+      break;
+}
+```
+
+
+## Chapter 6
+
+In this sixth chapter, we will work with the arrays, lists and maps. Those structures are very
+important before entering with the loops. This is the way to store multiple element of the same
+type to start a search, a map or a filter.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_6
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_6_solutions
+```
+
+---------------------------------------- link ----------------------------------------
+
+### Arrays
+
+The arrays are the most primitive type of lists. They have a fixed size, and the value cannot
+be removed.
+
+To instantiate a list:
+```
+int[] values = {1, 2, 3};
+```
+
+### Lists
+
+The lists have more functionalities. The size isn't fixed, you can add as much element as you
+want. You also can remove them. With the lists, you can start some basic search systems. You
+should override the equals method of the object you're searching for to optimize the search
+results.
+
+To instantiate an array list:
+```
+ArrayList<Integer> values = new ArrayList();
+```
+
+### Maps
+
+The maps are a key-value list. The values are stored next to the keys, to ease the way to fetch
+the values. And the keys are first hashed to calculate the memory space where the value will be
+stored. This way, to find a value from a key, we don't need to iterate over all the keys, the
+same calculation will be made with the key to find where the associated value is stored.
+
+To instanciate a map:
+```
+HashMap<Integer, String> values = new HashMap();
+```
 
 
 ## Chapter 7
