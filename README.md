@@ -165,7 +165,7 @@ from a terminal:
 git checkout chapter_3_solutions
 ```
 
----------------------------------------- link ------------------------------------------
+https://www.youtube.com/watch?v=xJIXhJLkLFE&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=7&t=0s
 
 ### Class
 
@@ -207,6 +207,9 @@ from the root folder of the project. If you want to see the answers, run
 from a terminal
 ```
 git checkout chapter_4_solutions
+```
+
+------------------------------------------ link -----------------------------------
 
 ### Object references
 
