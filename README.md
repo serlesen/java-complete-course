@@ -17,6 +17,7 @@ with the learned from the current lesson.
 To run the tests, run the following command from a terminal:
 `mvn test`
 
+https://www.youtube.com/playlist?list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed
 
 ## Chapter 1
 
@@ -35,8 +36,6 @@ from a terminal:
 ```
 git checkout chapter_1_solutions
 ```
-
-https://www.youtube.com/watch?v=oz0KUbUl1U4&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=4&t=0s
 
 ### Comments
 The comments are used to describe the application with a human readable text.
@@ -104,8 +103,6 @@ from a terminal:
 git checkout chapter_2_solutions
 ```
 
-https://www.youtube.com/watch?v=DVWjxuV0GPk&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=6&t=0s
-
 ### Primitives
 Here I will list all the primitives and describe their limits. How many characters
 can be used with the char. What values accept a boolean. The length of the numbers.
@@ -165,8 +162,6 @@ from a terminal:
 git checkout chapter_3_solutions
 ```
 
-https://www.youtube.com/watch?v=xJIXhJLkLFE&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=7&t=0s
-
 ### Class
 
 An object is created with a Java Class. What will be inside this class will be the definition
@@ -209,8 +204,6 @@ from a terminal
 git checkout chapter_4_solutions
 ```
 
-https://www.youtube.com/watch?v=9zq6xJRHRAg&list=PLab_if3UBk9-ktSKtoVQoLngTFpj9PIed&index=8&t=0s
-
 ### Object references
 
 The object references is the way an object is stored in the JVM. They
@@ -242,8 +235,6 @@ from a terminal:
 ```
 git checkout chapter_5_solutions
 ```
-
----------------------------- link -------------------------------------
 
 ### If-conditions
 
@@ -299,8 +290,6 @@ from a terminal:
 ```
 git checkout chapter_6_solutions
 ```
-
----------------------------------------- link ----------------------------------------
 
 ### Arrays
 
@@ -358,8 +347,6 @@ from a terminal:
 ```
 git checkout chapter_7_solutions
 ```
-
--------------------------------------- link ------------------------------------
 
 ### While loops
 
