@@ -388,7 +388,7 @@ To define a for-loop, we have three statements:
 for (initialization; exit_condition; iterative_statement) {
 	// set of statements
 }
-``` 
+```
 
 ### For-each loops
 
@@ -409,4 +409,49 @@ To control the loops, we have some special keywords:
 * continue: which will jump to the next iteration
 * return: as break, it will break the loop, but also the current method
 
+
+## Chapter 8
+
+In this eighth chapter, I'm gonna work with the Enum. The Enums are some sort of constants,
+functional constants. I usually use the enums to describe the status of an object. This way,
+using an enum, I ensure that no strange value is used, only the allowed values fixed by the
+enums. 
+
+To see the content, run from a terminal:
+```
+git checkout chapter_8
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_8_solutions
+```
+
+### Fields in Enums
+
+I can also add internal fields in an enum to enrich the enum. This way, an enum can have more
+properties than just the name. To add a field, you must first create a constructor, a private
+constructor, and when declaring each enum value, insert the value of the field inside the 
+constructor.
+
+```
+private DaysOfWeek(int value) {
+	this.value = value;
+}
+```
+
+
+### Methods in Enums
+
+As having fields to better describe an enum, we also can have methods. Common methods are used
+to read the value of the fields. And static methods are used to search for an enum value.
+
+```
+public static DaysOfWeek find(int value) {
+	// some logic
+	return DaysOfWeek.MONDAY;
+}
+```
 
