@@ -10,7 +10,7 @@ public class Enums {
 	 * Change the method "one" to return the ordinal of the given DaysOfWeek.
 	 */
 	public static int one(DaysOfWeek day) {
-		return -1;
+		return day.ordinal();
 	}
 	
 	/**
@@ -18,7 +18,7 @@ public class Enums {
 	 * You must also change the definition of DaysOfWeek to include the abbreviation of each value.
 	 */
 	public static String two(DaysOfWeek day) {
-		return "some";
+		return day.getAbbreviation();
 	}
 	
 	/**
@@ -26,7 +26,7 @@ public class Enums {
 	 * You must also change the enum DaysOfWeek to include a method to look for the value from an abbreviation.
 	 */
 	public static DaysOfWeek three(String nameOfTheDay) {
-		return DaysOfWeek.MONDAY;
+		return DaysOfWeek.findDaysOfWeek(nameOfTheDay);
 	}
 
 }
