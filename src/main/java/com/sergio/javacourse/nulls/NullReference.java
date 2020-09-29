@@ -20,12 +20,13 @@ public class NullReference {
 		for (Book book : books) {
 			
 			// insert the login here
-			
+			if (book.title.equals(bookName)) {
+				return book;
+			}
 		}
 		
 		// and replace also this line
-		return new Book("", "");
-		
+		return null;
 	}
 	
 	
@@ -35,15 +36,28 @@ public class NullReference {
 	 */
 	public static Float two(Price price) {
 		
-		return 0f;
+		if (price.unitPrice == null
+				|| price.vatPercentage == null
+				|| price.quantity == null) {
+			return null;
+		}
+		
+		return price.unitPrice * price.vatPercentage * price.quantity;
 	}
 	
 	
 	/**
 	 * Build a Price object if all the input values are different from null.
 	 */
-	public static Price three(Float unitPrice, Float vatPercentage, Integer quantity, String currencty) {
-		return null;
+	public static Price three(Float unitPrice, Float vatPercentage, Integer quantity, String currency) {
+		if (unitPrice == null
+				|| vatPercentage == null
+				|| quantity == null
+				|| currency == null) {
+			return null;
+		}
+		
+		return new Price(unitPrice, vatPercentage, quantity, currency);
 	}
 
 }
