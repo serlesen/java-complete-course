@@ -273,6 +273,37 @@ switch (input) {
 ```
 
 
+## Chapter 5.1
+
+This small chapter is dedicated to the null reference. When instantiating an object, the memory
+address is stored in the variable, not the entire value. But I may want to initialize a variable
+without storing anything on it, storing an empty value, a null reference.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_5_1
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal
+```
+git checkout chapter_5_1_solutions
+```
+
+### The alternative
+
+When programming, sometimes, I can't return the desired value. Like in a search algorithm, if
+the desired element isn't found, I can't return it. Instead, I can return a null reference. But
+this isn't the correct solution. As the null reference has no behavior behind, and if I expect
+an object in the variable location but I have the null reference, I will get an exception if
+I try to use it as an object.
+
+In the other way, if I throw an exception instead of returning a null reference, the complete
+application will be stopped until I catch the exception, and the null reference will be left
+behind.
+
+
 ## Chapter 6
 
 In this sixth chapter, we will work with the arrays, lists and maps. Those structures are very
