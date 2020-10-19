@@ -486,3 +486,43 @@ public static DaysOfWeek find(int value) {
 }
 ```
 
+
+## Chapter 9
+
+In this ninth video, I will explain the encapsulation, inheritance and polymorphism concepts. For that
+I will use the Java interfaces and the abstract classes.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_9
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_9_solutions
+```
+
+### Interfaces
+
+The interfaces are just method definitions of a class. When a class implements an interface, the class
+must have methods declared the same way the interface. The class must have a behavior for the defined
+methods. Nevertheless, some basic behavior can be written in the interface with the default methods.
+
+
+### Abstract classes
+
+The abstract classes act like the interfaces, but can have an already defined behavior for some methods.
+It can even have fields that may be used in the children classes. To access the methods and fields from
+the abstract class, from the parent class, the `super` keyword must be used.
+
+
+### Inheritance
+
+Both the abstract classes as the interfaces may have multiple levels. An abstract class may extends
+another abstract class. And an interface can extend another interface. This is the inheritance, define
+a complex behavior in multiple layers.
+
+
+
