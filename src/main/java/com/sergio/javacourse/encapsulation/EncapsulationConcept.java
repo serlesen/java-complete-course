@@ -18,6 +18,9 @@ public class EncapsulationConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
@@ -32,6 +35,9 @@ public class EncapsulationConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
@@ -46,6 +52,9 @@ public class EncapsulationConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}

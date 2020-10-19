@@ -3,6 +3,7 @@ package com.sergio.javacourse.inheritance;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class InheritanceConcept {
 	
 	public static void main(String[] args) {
@@ -18,6 +19,9 @@ public class InheritanceConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
@@ -32,6 +36,9 @@ public class InheritanceConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
@@ -46,6 +53,9 @@ public class InheritanceConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}

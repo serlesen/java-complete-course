@@ -3,6 +3,8 @@ package com.sergio.javacourse.polymorphism;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class PolymorphismConcept {
 	
 	public static void main(String[] args) {
@@ -18,6 +20,9 @@ public class PolymorphismConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
@@ -32,6 +37,9 @@ public class PolymorphismConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
@@ -46,6 +54,9 @@ public class PolymorphismConcept {
 		
 		// add an instantiation of each vehicle in the list as follows:
 		// vehicles.add(new SomeKindOfVehicle());
+		vehicles.add(new Moto());
+		vehicles.add(new Car());
+		vehicles.add(new Plane());
 		
 		return vehicles;
 	}
