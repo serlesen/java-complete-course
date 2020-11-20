@@ -525,4 +525,68 @@ another abstract class. And an interface can extend another interface. This is t
 a complex behavior in multiple layers.
 
 
+## Chapter 9.1
+
+In the second part of the chapter dedicated to the abstract classes and interfaces, I will show how
+to cast the objects from one class to another. But the casting is mainly based on the abstract classes
+and interfaces, that's why it's the second part of the ninth chapter.
+
+The casting is just saying that an object will act as a class which is not the one used for its definition.
+It's a way to map a object into another class definition.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_9_1
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_9_1_solutions
+```
+
+### Casting primitive
+
+The first type of casting is done with the primitive types and its boxed objects. The casting can be made
+in both ways. From the primitive type to the boxed object:
+```
+int source = 15;
+Integer destination = (Integer) source;
+```
+
+In this case, the cast class, the parenthesis, are not mandatory. Java can do the casting itself. And in
+the reverse way:
+```
+Integer source = 15;
+int destination = (int) source;
+```
+Even here, the cast is optional. Nevertheless, a problem may occur if the object has a null value. Because
+Java can't map the null value into a primitive type. 
+
+### Casting interfaces and implementations
+
+Another way casting can be used is when casting an implementation of an object into the definition of its
+interface. The most common case is the following:
+```
+List<Integer> list = new ArrayList<>();
+```
+
+The implementation is ArrayList and the interface is List. As with the primitives, the cast is optinal (it's
+not included in the code).
+
+And I can cast the list again into an ArrayList, but this way I will need to explicitly write the cast.
+Casting an interface into an implementation may lead to ClassCastExceptions if the implementation used
+is not the same as the one of the object.
+
+### Casting abstract classes and parent classes
+
+The last case is casting an object to its abstract class. It's the same as casting an implementation to its
+interface. The same of the parent classes and its children.
+
+### instanceof keyword
+
+To avoid problems, the `instanceof` keyword will check if an object can be casted into a class or not. This
+way, I can avoid most of the ClassCastExceptions. This operation returns a boolean result.
+
 
