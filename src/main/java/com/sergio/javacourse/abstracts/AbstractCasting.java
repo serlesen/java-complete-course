@@ -2,6 +2,7 @@ package com.sergio.javacourse.abstracts;
 
 import com.sergio.javacourse.abstracts.misc.AbstractClass;
 import com.sergio.javacourse.abstracts.misc.ExtendedClass;
+import com.sergio.javacourse.abstracts.misc.SecondExtendedClass;
 
 public class AbstractCasting {
 	
@@ -13,14 +14,16 @@ public class AbstractCasting {
 	 * Create an object of type ExtendedClass, store it in an object of class type AbstractClass and return id.
 	 */
 	public static AbstractClass one() {
-		return null;
+		AbstractClass o = new ExtendedClass();
+		return o;
 	}
 	
 	/**
 	 * Create an object of type SecondExtendedClass, store it in an object of class type AbstractClass and return id.
 	 */
 	public static AbstractClass two() {
-		return null;
+		AbstractClass o = new SecondExtendedClass();
+		return o;
 	}
 	
 	/**
@@ -28,6 +31,9 @@ public class AbstractCasting {
 	 * otherwise return null.
 	 */
 	public static ExtendedClass three(AbstractClass input) {
+		if (input instanceof ExtendedClass) {
+			return (ExtendedClass) input;
+		}
 		return null;
 	}
 

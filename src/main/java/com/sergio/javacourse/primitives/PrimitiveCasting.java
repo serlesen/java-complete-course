@@ -10,14 +10,14 @@ public class PrimitiveCasting {
 	 * Write the return statement to return the int value as an Integer. 
 	 */
 	public static Integer one(int i) {
-		return 0;
+		return i;
 	}
 	
 	/**
 	 * Write the return statement to return the long value as an int.
 	 */
 	public static int two(long l) {
-		return 0;
+		return (int) l;
 	}
 	
 	/**
@@ -25,7 +25,10 @@ public class PrimitiveCasting {
 	 * Be careful with the incoming null values. If a null value is received, return directly -1.
 	 */
 	public static int three(Integer i) {
-		return 0;
+		if (i == null) {
+			return -1;
+		}
+		return (int) i;
 	}
 
 }

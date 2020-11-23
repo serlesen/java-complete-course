@@ -2,6 +2,7 @@ package com.sergio.javacourse.interfaces;
 
 import com.sergio.javacourse.interfaces.misc.ImplementationClass;
 import com.sergio.javacourse.interfaces.misc.InterfacedClass;
+import com.sergio.javacourse.interfaces.misc.SecondImplementationClass;
 
 public class InterfaceCasting {
 	
@@ -13,14 +14,16 @@ public class InterfaceCasting {
 	 * Create an object of type ImplementationClass and return it.
 	 */
 	public static InterfacedClass one() {
-		return null;
+		InterfacedClass o = new ImplementationClass();
+		return o;
 	}
 	
 	/**
 	 * Create an object of type SecondImplementationClass and return it.
 	 */
 	public static InterfacedClass two() {
-		return null;
+		InterfacedClass o = new SecondImplementationClass();
+		return o;
 	}
 	
 	/**
@@ -28,6 +31,9 @@ public class InterfaceCasting {
 	 * otherwise return null.
 	 */
 	public static ImplementationClass three(InterfacedClass input) {
+		if (input instanceof ImplementationClass) {
+			return (ImplementationClass) input;
+		}
 		return null;
 	}
 
