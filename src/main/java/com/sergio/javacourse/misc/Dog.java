@@ -14,4 +14,18 @@ public class Dog extends Animal {
 		return 4;
 	}
 	
+	public String getColor() {
+		return "blue";
+	}
+	
+	public static Boolean hasNose() {
+		return true;
+	}
+	
+	public Integer getSize() {
+		return 10;
+	}
+	
+	private void walk() {}
+	
 }

@@ -13,7 +13,7 @@ public class InputParams {
 	 * Return the value incremented by one.
 	 */
 	public static int one(int value) {
-		return -1;
+		return value + 1;
 	}
 	
 	/**
@@ -21,7 +21,7 @@ public class InputParams {
 	 * Modify the field "value" of the object incrementing it by one.
 	 */
 	public static void two(AmountAggregator ref) {
-		
+		ref.setValue(ref.getValue() + 1);
 	}
 	
 	/**
@@ -29,10 +29,9 @@ public class InputParams {
 	 * incremented incorrectly in the method. Update the method signature to 
 	 * make them "final" and correct the compilation errors.
 	 */
-	public static int three(int value, AmountAggregator ref) {
-		value++;
-		ref = new AmountAggregator(ref.getValue() + 1);
-		return value;
+	public static int three(final int value, final AmountAggregator ref) {
+		ref.setValue(ref.getValue() + 1);
+		return value + 1;
 	}
 
 }

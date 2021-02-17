@@ -4,5 +4,6 @@ public abstract class Animal {
 	
 	protected String name;
 	
+	protected void breath() {}
 
 }
