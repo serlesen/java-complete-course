@@ -590,3 +590,74 @@ To avoid problems, the `instanceof` keyword will check if an object can be caste
 way, I can avoid most of the ClassCastExceptions. This operation returns a boolean result.
 
 
+## Chapter 10
+
+This tenth chapter will talk about the methods definitions. How to write a method, how to add input parameters,
+how to set an output value, and how to set the visibility.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_10
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_10_solutions
+```
+
+### Input parameters
+
+The input parameters can be from any type you want: objects or primitives. The particularity is that the 
+primitives passed as input parameters by value, and the objects are passed as reference.
+
+A best practice is to define the input parameters as final variables, because it makes no sense to modify 
+their value. If it's an object, it means that you're setting another memory address in the pointer 
+(loosing the original). And if it's a primitive, you're just overriding the original value.
+
+Having objects as input parameters are the only way to modify the values from outside the method. Having 
+primitives as input parameters, you must return the updated value which must be assigned back to the
+original variable if you want to update it.
+
+
+### Output parameters
+
+The output parameter can be any type of class or primitive. And if it makes no sense to return something,
+you can declare a method to return `void`. The `return` statement works as with a return type, but the right
+side will be empty. In the case of a `void` method, the `return` statement will act as a break.
+
+### Visibility
+
+The methods visibility can be:
+* `public` if you want to be accessible from outside a class;
+* `private` if you want to be accessible only from inside a class;
+* `protected` if you want to be accessible from the class itself or its parent (or grand parent). This work
+for both abstract classes or interfaces.
+* package private which means that the method can be invoke somewhere inside the same package.
+
+
+### Static methods
+
+The `static` keyword means that a class method can be invoked without the need to instantiate the class.
+
+
+## Chapter 11
+
+This chapter handles the recursive methods. The recursive methods are the one which call itself. This is
+very useful when you want a repetitive action over a single object. But this must be taken with care.
+The most important part of a recursive method is the terminal condition. This terminal condition must be
+check at first inside the method, before call it again. Otherwise the method will be stuck into itself
+forever.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_11
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_11_solutions
+
