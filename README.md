@@ -590,3 +590,22 @@ To avoid problems, the `instanceof` keyword will check if an object can be caste
 way, I can avoid most of the ClassCastExceptions. This operation returns a boolean result.
 
 
+## Chapter 11
+
+This chapter handles the recursive methods. The recursive methods are the one which call itself. This is
+very useful when you want a repetitive action over a single object. But this must be taken with care.
+The most important part of a recursive method is the terminal condition. This terminal condition must be
+check at first inside the method, before call it again. Otherwise the method will be stuck into itself
+forever.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_11
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_11_solutions
+
