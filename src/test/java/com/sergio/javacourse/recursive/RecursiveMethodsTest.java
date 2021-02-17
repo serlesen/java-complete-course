@@ -21,7 +21,7 @@ public class RecursiveMethodsTest {
 		p3.maried = true;
 		
 		
-		p1.children = Arrays.asList(p1, p2);
+		p1.children = Arrays.asList(p2, p3);
 		
 		assertEquals(RecursiveMethods.amountInFamily(p1), 5);
 	}
@@ -54,7 +54,7 @@ public class RecursiveMethodsTest {
 		p3.children = Arrays.asList(p31);
 		
 		
-		p1.children = Arrays.asList(p1, p2);
+		p1.children = Arrays.asList(p2, p3);
 		
 		assertEquals(RecursiveMethods.amountInFamily(p1), 12);
 	}

@@ -16,7 +16,15 @@ public class RecursiveMethods {
 	 * Do the same for the children (and grand-children, etc).
 	 */
 	public static int amountInFamily(Person person) {
-		return -1;
+		if (person.children == null) {
+			return person.maried ? 2 : 1;
+		}
+		int currentFamilty = 0;
+		for (Person child : person.children) {
+			currentFamilty += amountInFamily(child);
+		}
+		currentFamilty += person.maried ? 2 : 1;
+		return currentFamilty;
 	}
 	
 }
