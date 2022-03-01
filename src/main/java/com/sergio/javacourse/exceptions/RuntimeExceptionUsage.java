@@ -10,6 +10,6 @@ public class RuntimeExceptionUsage {
      * Write the content of the method to throw a RuntimeException with the message "I'm an exception".
      */
     public static void throwAnException() {
-
+        throw new RuntimeException("I'm an exception");
     }
 }

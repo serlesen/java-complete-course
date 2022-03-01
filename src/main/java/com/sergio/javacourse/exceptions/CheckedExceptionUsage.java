@@ -13,8 +13,11 @@ public class CheckedExceptionUsage {
      * In the catch block, return true
      */
     public static boolean catchACheckedException() {
-        // uncomment this line for the assignment
-        // MiscExceptionUsage.methodWithACheckedException();
+        try {
+            MiscExceptionUsage.methodWithACheckedException();
+        } catch (Exception e) {
+            return true;
+        }
         return false;
     }
 
@@ -22,9 +25,8 @@ public class CheckedExceptionUsage {
      * Uncomment the line inside the method and change the method declaration to indicate that this method
      * may throw an exception.
      */
-    public static void declareACheckedException() {
-        // uncomment this line for the assignment
-        // MiscExceptionUsage.methodWithACheckedException();
+    public static void declareACheckedException() throws Exception {
+        MiscExceptionUsage.methodWithACheckedException();
     }
 
     /**
@@ -38,6 +40,8 @@ public class CheckedExceptionUsage {
             result = 1;
         } catch (Exception e) {
             result = 2;
+        } finally {
+            result = 3;
         }
 
         return result;
@@ -52,8 +56,15 @@ public class CheckedExceptionUsage {
      * If not exception is thrown, return 4
      */
     public static int catchMultipleExceptions(Exception exception) {
-        // uncomment this line for the assignment
-        // MiscExceptionUsage.methodWithAGivenException(exception);
-        return -1;
+        try {
+            MiscExceptionUsage.methodWithAGivenException(exception);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            return 1;
+        } catch (IOException e) {
+            return 2;
+        } catch (Exception e) {
+            return 3;
+        }
+        return 4;
     }
 }
