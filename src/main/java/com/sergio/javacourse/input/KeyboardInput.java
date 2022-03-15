@@ -12,6 +12,10 @@ public class KeyboardInput {
      * Write the necessary to read a string from the console. The read value must be returned to the method.
      */
     public static String readAString() {
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNext()) {
+            return scanner.next();
+        }
         return null;
     }
 
@@ -19,6 +23,10 @@ public class KeyboardInput {
      * Write the necessary to read a complete line of strings from the console. The read value must be returned to the method.
      */
     public static String readALine() {
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNextLine()) {
+            return scanner.nextLine();
+        }
         return null;
     }
 
@@ -27,6 +35,10 @@ public class KeyboardInput {
      * If the input doesn't match the pattern 'hello', return null.
      */
     public static String readTheString() {
+        Scanner scanner = new Scanner(System.in);
+        if (scanner.hasNext("hello")) {
+            return scanner.next("hello");
+        }
         return null;
     }
 }
