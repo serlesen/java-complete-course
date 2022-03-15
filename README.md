@@ -660,4 +660,61 @@ from the root folder of the project. If you want to see the answers, run
 from a terminal:
 ```
 git checkout chapter_11_solutions
+```
+
+
+## Chapter 12
+
+In this chapter I will explain the usage of the Exceptions. There are two kind of exceptions: runtime 
+exceptions and checked exceptions.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_12
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_12_solutions
+```
+
+### Checked Exceptions
+
+The checked exceptions are those where thrown by a method and that must be catched. When using a method
+which has a checked exception declared, I must surround the usage of the method by a try/catch or declare
+the method with the same excetpion. Otherwise, I get a compilation error.
+
+### Runtime Exceptions
+
+The runtime exceptions are those which don't need the try/catch block. Those exceptions can appear at any
+time in the application. A try/catch can help, nevertheless, it's very difficult to guess where a runtime
+exception can appear.
+
+### Custom Exceptions
+
+I can also create my own exception. The need to create a custom exception is to break my application at
+any time due to a technical or functional problem. So, the best choice is to create a Runtime Exception
+that can be throw at anywhere.
+
+ 
+## Chapter 13
+
+In this chapter I handle the keyboard input. The keyboard input is the main way a user has to communicate
+with a Java application. To read data from the keyboard, I must first create a stream with tne input channel
+of the system. With this stream, I read whatever variable type I need, integer or string.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_13
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_13_solutions
+```
+
 
