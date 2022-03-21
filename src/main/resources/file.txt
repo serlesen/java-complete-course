@@ -1,0 +1,4 @@
+This is the content of the file
+This is the second line
+
+Before was an empty line
