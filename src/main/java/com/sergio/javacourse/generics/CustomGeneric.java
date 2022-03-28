@@ -1,5 +1,6 @@
 package com.sergio.javacourse.generics;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomGeneric {
@@ -13,7 +14,9 @@ public class CustomGeneric {
      * When adding the element to the list, you will need to cast it correctly.
      */
     public static List createStringList(Object item) {
-        return null;
+        List<String> list = new ArrayList<>();
+        list.add((String) item);
+        return list;
     }
 
     /**
@@ -22,7 +25,9 @@ public class CustomGeneric {
      * Be aware, that only objects are accepted in the Generics definitions, not primitive types.
      */
     public static List createIntegerList(Object item) {
-        return null;
+        List<Integer> list = new ArrayList<>();
+        list.add((Integer) item);
+        return list;
     }
 
     /**
@@ -32,6 +37,8 @@ public class CustomGeneric {
      * and return the created object.
      */
     public static MyGenericClass editCustomGenericClass(Object item) {
-        return null;
+        MyGenericClass<String> myGenericClass = new MyGenericClass<>();
+        myGenericClass.accept((String) item);
+        return myGenericClass;
     }
 }

@@ -6,12 +6,15 @@ package com.sergio.javacourse.generics;
  * Be aware to edit inside both methods to save the given item and return it. An internal field will be needed, with
  * the Generic definition too.
  */
-public class MyGenericClass {
+public class MyGenericClass<T> {
 
-    public void accept(Object item) {
+    private T value;
+
+    public void accept(T item) {
+        this.value = item;
     }
 
-    public Object returns() {
-        return null;
+    public T returns() {
+        return this.value;
     }
 }
