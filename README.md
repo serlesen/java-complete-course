@@ -740,3 +740,26 @@ from a terminal:
 ```
 git checkout chapter_14_solutions
 ```
+
+
+## Chapter 15
+
+In this chapter I will show what are the generics and how to use or create them. The most used example is the lists.
+A generic will indicate which class is accepted inside a list. This way, the list will only accept, without the need to
+cast or check the class, the defined generic class. From Java 7, the generic definition is only needed in the left side
+of the assignation.
+
+Then, I will show how a custom class can be created to accept generics in its definition.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_15
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_15_solutions
+```
+
