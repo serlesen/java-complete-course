@@ -12,7 +12,7 @@ public class MyThreadClass {
      * Create and return a thread that modifies the value of the variable myVar to 1.
      */
     public static Thread singleThread() {
-        return null;
+        return new Thread(() -> myVar = 1);
     }
 
     /**
@@ -20,7 +20,14 @@ public class MyThreadClass {
      * The thread must first wait 5 seconds before modifying the value of the variable.
      */
     public static Runnable longRunnable() {
-        return null;
+        return () -> {
+            try {
+                Thread.sleep(5000);
+                myVar = 10;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        };
     }
 
 }

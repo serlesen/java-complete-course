@@ -14,6 +14,8 @@ public class MyAtomicClass {
      * Increment the value of the AtomicInteger atomicInteger with an increment given as the input parameter.
      */
     public static void increment(int increment) {
-
+        for (int i = 0; i < increment; i++) {
+            atomicInteger.incrementAndGet();
+        }
     }
 }

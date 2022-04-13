@@ -1,5 +1,6 @@
 package com.sergio.javacourse.futures;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
 public class MyFutureClass {
@@ -16,6 +17,7 @@ public class MyFutureClass {
      * The second CompletableFuture must concat the following string " I'm fine."
      */
     public static Future<String> multipleFutures() {
-        return null;
+        return CompletableFuture.supplyAsync(() -> "How are you?")
+                .thenApplyAsync(s -> s + " I'm fine.");
     }
 }

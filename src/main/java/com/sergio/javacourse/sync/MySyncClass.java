@@ -15,7 +15,9 @@ public class MySyncClass {
      * Add the item to the list myList using the synchronized keyword before adding item to the list.
      */
     public static void syncObject(String item) {
-
+        synchronized (myList) {
+            myList.add(item);
+        }
     }
 
 }
