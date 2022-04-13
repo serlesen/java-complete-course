@@ -740,3 +740,82 @@ from a terminal:
 ```
 git checkout chapter_14_solutions
 ```
+
+
+## Chapter 15
+
+In this chapter I will show what are the generics and how to use or create them. The most used example is the lists.
+A generic will indicate which class is accepted inside a list. This way, the list will only accept, without the need to
+cast or check the class, the defined generic class. From Java 7, the generic definition is only needed in the left side
+of the assignation.
+
+Then, I will show how a custom class can be created to accept generics in its definition.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_15
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_15_solutions
+```
+
+## Chapter 16
+
+In this chapter I introduce two very important concepts: the Lambdas and the Streams.
+
+### Lambdas
+
+To explain the Lambdas, I start with the method reference. The method reference is storing into a variable a reference
+to a method. This way, I can run dynamically a method from a variable. The type of this variable will be Function (if
+there are input values and output values), Consumer (if there are only input values) or Supplier (if there are only
+output values). 
+
+From the method reference, the Lambdas are just anonymous methods. I don't need to define a method to assign it to a
+Function variable. I just declare the input parameters, write an arrow (->) and write the body inside the curly 
+brackets.
+
+### Streams
+
+The streams are a flow of unbounded data. Comparing to the for loops, with the Streams I don't know (and I don't
+care) about the length of the data. It may even be unlimited. With the streams, I can apply several operations using
+the Lambdas. There are the intermediary operations and the terminal operations.
+
+I can chain multiple intermediary operations but a single terminal operation. Intermediary operations are maps, filter,
+limit and more. The terminal operations are count, average, collect and more. The terminal operations can return a list,
+a map, a value (as a long or double) or an Optional.
+
+The Optional is a new value type in Java which means that the value may be present or not.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_16
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_16_solutions
+```
+
+## Chapter 17
+
+In this chapter, I explain the concurrent programming. I will show the common problems and the possible solutions.
+I will explain the usage of the classes Thread and Runnable, Semaphore, the keyword syncrhonized, the Atomic objects.
+Finally, I explain the CompletableFutures and how to chain them.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_17
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_17_solutions
+```
