@@ -1,5 +1,8 @@
 package com.sergio.javacourse.regex;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class MyRegexClass {
 
     public static void main(String[] args) {
@@ -12,7 +15,9 @@ public class MyRegexClass {
      * Return true if the input parameter contains the word 'hello', or false if not.
      */
     public static boolean searchWord(String str) {
-        return false;
+        Pattern pattern = Pattern.compile(".*hello.*");
+        Matcher matcher = pattern.matcher(str);
+        return matcher.matches();
     }
 
     /**
@@ -28,7 +33,9 @@ public class MyRegexClass {
      * Returns true if the input parameter follows this pattern, or else return false.
      */
     public static boolean searchStructure(String str) {
-        return false;
+        Pattern pattern = Pattern.compile("Now, the time is [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}. Bye!");
+        Matcher matcher = pattern.matcher(str);
+        return matcher.matches();
     }
 
     /**
@@ -37,6 +44,13 @@ public class MyRegexClass {
      * If the input parameter doesn't match it, returns it as it is.
      */
     public static String replaceStructure(String str) {
-        return null;
+        Pattern pattern = Pattern.compile("Now, the time is ([0-9]{4})-([0-9]{2})-([0-9]{2})T([0-9]{2}):([0-9]{2}):([0-9]{2}). Bye!");
+        Matcher matcher = pattern.matcher(str);
+
+        if (matcher.matches()) {
+            return matcher.replaceAll("Now the date is $3/$2/$1. See you soon!");
+        }
+
+        return str;
     }
 }
