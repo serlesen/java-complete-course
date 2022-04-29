@@ -819,3 +819,21 @@ from a terminal:
 ```
 git checkout chapter_17_solutions
 ```
+
+
+## Chapter 18
+
+In this chapter, I explain what are the regexes and how to use them to search and replace something in a string. I will
+explain the OR condition, the presence of a character, the length of a group and more.
+
+To see the content, run from a terminal:
+```
+git checkout chapter_18
+```
+
+You will have exercises/tests to test your knowledge by running `mvn test`
+from the root folder of the project. If you want to see the answers, run
+from a terminal:
+```
+git checkout chapter_18_solutions
+```
